@@ -1,0 +1,11 @@
+h1 {
+  text-align: center;
+  color: red;
+}
+
+#content {
+  width: 100%;
+  text-align: center;
+  color: blue;
+  font-size: 2rem;
+}
