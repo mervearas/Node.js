@@ -10,7 +10,7 @@ app.set('view engine', 'handlebars');
 app.engine('handlebars', exphbs({ defaultLayout: false }));
 
 app.get('/', (req, res) => {
-  res.send('hello from backend to frontend!')
+  res.render('index')
 })
 
 app.post('/weather', (req, res) => {
