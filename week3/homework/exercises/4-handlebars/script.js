@@ -33,16 +33,9 @@ const punchlines = [
 
 function drawCard() {
   // YOUR CODE GOES IN HERE
-  let cardData = {
-    subject:'',
-    punchline:''
-  }
-  cardData.subject = getRandomElement(subjects);
-  cardData.punchline = getRandomElement(punchlines);
-
   const card = '{{subject}} is great to {{punchline}}';
   const template = handlebars.compile(card)
-  const result = template({subject: cardData.subject, punchline: cardData.punchline})
+  const result = template({subject: getRandomElement(subjects), punchline: getRandomElement(punchlines)})
   console.log(result)
 }
 
