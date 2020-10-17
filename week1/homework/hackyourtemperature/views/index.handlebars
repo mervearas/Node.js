@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hack Your Temperature</title>
+
+  <style>
+
+    body {
+      font-family: serif;
+      background-color: rgb(189, 223, 223);
+    }
+    
+    form {
+      width: 100%;
+      text-align: center;
+      padding-top: 10%;
+    }
+
+    input {
+      font-size: 2rem;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    button {
+      font-size: 2rem;
+      border-radius: 10px;
+      color: white;
+      background-color: lightsalmon;
+      padding: 0 8px;
+      box-shadow: 5px 4px 2px black; 
+    }
+
+    button:hover {
+      cursor: pointer;
+      background-color: rgb(129, 224, 224);
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+  </style>
 </head>
 <body>
   <form method="POST" action="/weather">
